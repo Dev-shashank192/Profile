@@ -1,0 +1,624 @@
+/* CSS for front page */
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+h1 {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #444;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.Profile_pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: scaleIn 1s ease-in-out;
+}
+
+.profile-text {
+    max-width: 600px;
+}
+
+.profile-text h1 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+    color: #222;
+}
+
+.profile-text h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #666;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* Styling for blocks at the bottom */
+.blocks-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    background: #f0f0f0;
+}
+
+.block {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: perspective(600px) translateZ(0);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.block:hover {
+    transform: perspective(600px) translateZ(30px) scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #1d8efe, #00c6fe);
+}
+
+
+/* Project Page */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('BG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Heading Styles */
+.heading {
+    text-align: center;
+    text-decoration: underline;
+    color: aliceblue;
+    text-shadow: 5px 15px 10px #000000;
+    margin-top: 20px;
+}
+
+/* Projects Section */
+.projects {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+}
+
+/* Project Box Design */
+.projects li {
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    color: bisque;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s, box-shadow 0.5s;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.projects li:hover {
+    transform: rotateY(10deg) translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Project Title */
+.projects h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fdd835;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Project Description */
+.projects p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+/* Internship Page */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Heading Section */
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    color: #1f2937;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Company Section */
+.company {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.company ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.company li {
+    margin-bottom: 20px;
+    /* background: #ffffff; */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    perspective: 1000px;
+    animation: cardFloat 1.5s ease-in-out infinite;
+}
+
+/* 3D Animation for Company Names */
+.company_name {
+    font-size: 1.8rem;
+    color: #2563eb;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #4b5563;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Horizontal Rule Styling */
+hr {
+    border: none;
+    border-top: 1px solid #d1d5db;
+    margin: 20px 0;
+}
+
+/* Keyframe for Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframe for 3D Floating Animation */
+@keyframes cardFloat {
+    0% {
+        transform: translateY(0) rotateX(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotateX(5deg);
+    }
+    100% {
+        transform: translateY(0) rotateX(0deg);
+    }
+} 
+
+
+
+
+
+
+
+/* ABout Page */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f7f8fc, #d9e4f5);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* About Container Styling */
+.about-container {
+    text-align: center;
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    transform: perspective(1000px) rotateX(0deg);
+    animation: fadeIn 1s ease-out;
+}
+
+.about-container:hover {
+    transform: perspective(1000px) rotateX(5deg);
+}
+
+/* Title Styling */
+.about-container h1 {
+    margin: 0;
+    padding: 20px;
+    background: #4facfe;
+    color: #ffffff;
+    font-size: 2rem;
+    border-radius: 10px 10px 0 0;
+}
+
+/* About Card Styling */
+.about-card {
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 15px;
+    transition: transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-card:hover {
+    transform: translateY(-10px) scale(1.05) rotateY(3deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings and Paragraphs */
+.about-card h2,
+.about-card h3 {
+    font-size: 1.8rem;
+    margin: 0 0 10px;
+    color: #333;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Skills List Styling */
+.about-card ul {
+    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.about-card ul li {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Skill Page CSS */
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+}
+
+/* Skills Container */
+.skills-container {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.skills-container h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Skills Section */
+.skills-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: slideIn 2s ease-in-out;
+}
+
+/* Skill Card Styling */
+.card {
+    background: #ffffff;
+    color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    perspective: 1000px;
+    transform: rotateX(0deg) translateZ(0);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    animation: floatCard 3s ease-in-out infinite;
+}
+
+.card h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #1e3c72;
+    animation: popUp 1.5s ease-in-out;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.card li {
+    margin-bottom: 10px;
+}
+
+/* Animations */
+
+/* Floating Animation for Cards */
+@keyframes floatCard {
+    0% {
+        transform: rotateX(0deg) translateY(0px);
+    }
+    50% {
+        transform: rotateX(5deg) translateY(-10px);
+    }
+    100% {
+        transform: rotateX(0deg) translateY(0px);
+    }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pop-Up Animation */
+@keyframes popUp {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Slide-In Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+/* Contact Page */
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contact Section Styling */
+.contact-details {
+    width: 60%;
+    max-width: 600px;
+    border: 2px solid #2563eb;
+    border-radius: 15px;
+    padding: 20px 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Heading Styling */
+.contact-details h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Paragraph and Link Styling */
+.contact-details p {
+    font-size: 1rem;
+    color: #374151;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.contact-details strong {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.contact-details a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Animation for Contact Box */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
